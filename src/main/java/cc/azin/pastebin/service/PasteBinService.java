@@ -14,6 +14,12 @@ public class PasteBinService {
 
   @Resource private PasteBinRepo pasteBinRepo;
 
+  /**
+   * 创建PasteBin
+   *
+   * @param createPasteBinReq CreatePasteBinReq
+   * @return CreatePasteBinResp
+   */
   public CreatePasteBinResp createBin(CreatePasteBinReq createPasteBinReq) {
     PasteBinPo po =
         PasteBinPo.builder()
@@ -25,6 +31,12 @@ public class PasteBinService {
     return CreatePasteBinResp.builder().id(po.getId()).build();
   }
 
+  /**
+   * 获取粘贴板内容
+   *
+   * @param binId 粘贴板Id
+   * @return 粘贴内容
+   */
   public QueryPasteBinResp getBin(String binId) {
     PasteBinPo po = pasteBinRepo.selectById(binId);
     return QueryPasteBinResp.builder().content(po.getContent()).build();
