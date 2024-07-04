@@ -1,0 +1,1 @@
+[![构建状态](https://azincc.coding.net/badges/atools/job/4544313/build.svg)](https://azincc.coding.net/p/atools/ci/job)
