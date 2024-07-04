@@ -7,5 +7,5 @@ RUN wget -O /tmp/openjdk-17.0.2_linux-x64_bin.tar.gz https://repo.huaweicloud.co
     rm -f /tmp/openjdk-17.0.2_linux-x64_bin.tar.gz \
 # 设置环境变量
 ENV PATH="/opt/jdk-17.0.2/bin:${PATH}"
-COPY ../target/PasteBin-0.0.1-SNAPSHOT.jar /app/PasteBin-0.0.1-SNAPSHOT.jar
+COPY target/PasteBin-0.0.1-SNAPSHOT.jar /app/
 CMD ["java", "-jar", "/app/PasteBin-0.0.1-SNAPSHOT.jar"]
