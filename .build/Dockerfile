@@ -1,5 +1,4 @@
 FROM rockylinux:9.3.20231119-minimal
-USER service
 RUN yum update -y && yum install -y wget
 # 下载并解压jdk
 RUN wget -O /tmp/openjdk-17.0.2_linux-x64_bin.tar.gz https://repo.huaweicloud.com/openjdk/17.0.2/openjdk-17.0.2_linux-x64_bin.tar.gz && \
