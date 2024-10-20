@@ -1,12 +1,9 @@
 package cc.azin.pastebin.facade;
 
 import cc.azin.pastebin.service.PasteBinService;
-import cc.azin.pastebin.vo.CreatePasteBinReq;
-import cc.azin.pastebin.vo.CreatePasteBinResp;
-import cc.azin.pastebin.vo.QueryPasteBinResp;
+import cc.azin.pastebin.vo.*;
 import jakarta.annotation.Resource;
 import jakarta.validation.constraints.NotNull;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

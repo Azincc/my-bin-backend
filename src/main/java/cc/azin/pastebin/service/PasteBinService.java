@@ -2,17 +2,20 @@ package cc.azin.pastebin.service;
 
 import cc.azin.pastebin.entity.PasteBinPo;
 import cc.azin.pastebin.repo.PasteBinRepo;
-import cc.azin.pastebin.vo.CreatePasteBinReq;
-import cc.azin.pastebin.vo.CreatePasteBinResp;
-import cc.azin.pastebin.vo.QueryPasteBinResp;
+import cc.azin.pastebin.vo.*;
 import cn.hutool.core.util.RandomUtil;
 import jakarta.annotation.Resource;
+import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PasteBinService {
 
   @Resource private PasteBinRepo pasteBinRepo;
+
+  @Resource private TodoService todoService;
+
+  @Resource private ConversionService conversionService;
 
   /**
    * 创建PasteBin

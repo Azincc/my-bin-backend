@@ -1,7 +1,7 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://192.168.2.9:3306/my-paste-bin
+    url: jdbc:mysql://rocky:3306/my-paste-bin
     username: azin
   application:
     name: PasteBin
@@ -14,10 +14,20 @@ mybatis-plus:
   mapper-locations: classpath:/mapper/*.xml
   global-config:
     db-config:
+      logic-delete-field: deleted
       logic-delete-value: 1
       logic-not-delete-value: 0
+      table-underline: true # 开启驼峰命名到下划线命名的映射
 management:
   endpoints:
     web:
       cors:
         allowed-origins: '*'
+# application.yml
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+      ui:
+        path: /swagger-ui/
