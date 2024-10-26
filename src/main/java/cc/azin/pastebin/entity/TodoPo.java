@@ -3,14 +3,18 @@ package cc.azin.pastebin.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
 @SuperBuilder
 @TableName("todo_table")
+@AllArgsConstructor
+@NoArgsConstructor
 public class TodoPo extends BaseEntity {
   @Schema(description = "Todo内容")
   private String content;
