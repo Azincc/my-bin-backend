@@ -2,9 +2,13 @@
 
 CREATE TABLE IF NOT EXISTS pastebin
 (
-    id              CHAR(10) PRIMARY KEY,
-    content         TEXT NOT NULL,
-    created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    expires_at      TIMESTAMP,
-    deleted TINYINT(1) DEFAULT 0
+    #  基本字段
+    id           CHAR(10) PRIMARY KEY,
+    expires_at   TIMESTAMP,
+    created_time TIMESTAMP  DEFAULT CURRENT_TIMESTAMP,
+    updated_time TIMESTAMP,
+    created_by   VARCHAR(64),
+    deleted      TINYINT(1) DEFAULT 0,
+    #  pastebin内容
+    content      TEXT NOT NULL
 );

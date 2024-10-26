@@ -12,6 +12,5 @@ import lombok.experimental.SuperBuilder;
 @TableName("pastebin")
 public class PasteBinPo extends BaseEntity {
   private String content;
-  private LocalDateTime createdAt;
   private LocalDateTime expiresAt;
 }
