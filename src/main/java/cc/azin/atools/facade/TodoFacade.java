@@ -1,8 +1,8 @@
-package cc.azin.pastebin.facade;
+package cc.azin.atools.facade;
 
-import cc.azin.pastebin.service.TodoService;
-import cc.azin.pastebin.vo.CreateTodoReq;
-import cc.azin.pastebin.vo.CreateTodoResp;
+import cc.azin.atools.service.TodoService;
+import cc.azin.atools.vo.CreateTodoReq;
+import cc.azin.atools.vo.CreateTodoResp;
 import jakarta.annotation.Resource;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.web.bind.annotation.PostMapping;

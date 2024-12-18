@@ -1,4 +1,4 @@
-package cc.azin.pastebin.entity;
+package cc.azin.atools.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;

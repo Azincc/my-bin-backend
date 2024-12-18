@@ -1,6 +1,6 @@
-package cc.azin.pastebin.repo;
+package cc.azin.atools.repo;
 
-import cc.azin.pastebin.entity.PasteBinPo;
+import cc.azin.atools.entity.PasteBinPo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

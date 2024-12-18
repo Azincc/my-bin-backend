@@ -1,4 +1,4 @@
-package cc.azin.pastebin;
+package cc.azin.atools;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

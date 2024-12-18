@@ -1,11 +1,12 @@
-package cc.azin.pastebin.service;
+package cc.azin.atools.service;
 
-import cc.azin.pastebin.entity.PasteBinPo;
-import cc.azin.pastebin.repo.PasteBinRepo;
-import cc.azin.pastebin.vo.*;
+import cc.azin.atools.entity.PasteBinPo;
+import cc.azin.atools.repo.PasteBinRepo;
+import cc.azin.atools.vo.CreatePasteBinReq;
+import cc.azin.atools.vo.CreatePasteBinResp;
+import cc.azin.atools.vo.QueryPasteBinResp;
 import cn.hutool.core.util.RandomUtil;
 import jakarta.annotation.Resource;
-import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,9 +15,6 @@ public class PasteBinService {
   @Resource private PasteBinRepo pasteBinRepo;
 
   @Resource private TodoService todoService;
-
-  @Resource private ConversionService conversionService;
-
   /**
    * 创建PasteBin
    *

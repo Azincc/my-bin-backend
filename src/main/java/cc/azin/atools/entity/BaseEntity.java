@@ -1,4 +1,4 @@
-package cc.azin.pastebin.entity;
+package cc.azin.atools.entity;
 
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;

@@ -1,11 +1,11 @@
-package cc.azin.pastebin.service;
+package cc.azin.atools.service;
 
-import static cc.azin.pastebin.constant.TodoStatusEnum.UNFINISHED;
+import static cc.azin.atools.constant.TodoStatusEnum.UNFINISHED;
 
-import cc.azin.pastebin.entity.TodoPo;
-import cc.azin.pastebin.repo.TodoRepo;
-import cc.azin.pastebin.vo.CreateTodoReq;
-import cc.azin.pastebin.vo.CreateTodoResp;
+import cc.azin.atools.entity.TodoPo;
+import cc.azin.atools.repo.TodoRepo;
+import cc.azin.atools.vo.CreateTodoReq;
+import cc.azin.atools.vo.CreateTodoResp;
 import cn.hutool.core.util.IdUtil;
 import jakarta.annotation.Resource;
 import java.time.LocalDateTime;

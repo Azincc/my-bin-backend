@@ -1,5 +1,8 @@
-package cc.azin.pastebin.constant;
+package cc.azin.atools.constant;
 
+import lombok.Getter;
+
+@Getter
 public enum TodoStatusEnum {
   UNFINISHED("未完成"),
   FINISHED("已完成");
@@ -10,7 +13,4 @@ public enum TodoStatusEnum {
     this.status = status;
   }
 
-  public String getStatus() {
-    return status;
-  }
 }

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cc.azin</groupId>
-    <artifactId>PasteBin</artifactId>
+    <artifactId>ATools</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>PasteBin</name>
     <description>PasteBin</description>

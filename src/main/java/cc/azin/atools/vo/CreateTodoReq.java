@@ -1,4 +1,4 @@
-package cc.azin.pastebin.vo;
+package cc.azin.atools.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;

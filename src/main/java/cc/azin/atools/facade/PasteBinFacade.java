@@ -1,7 +1,9 @@
-package cc.azin.pastebin.facade;
+package cc.azin.atools.facade;
 
-import cc.azin.pastebin.service.PasteBinService;
-import cc.azin.pastebin.vo.*;
+import cc.azin.atools.service.PasteBinService;
+import cc.azin.atools.vo.CreatePasteBinReq;
+import cc.azin.atools.vo.CreatePasteBinResp;
+import cc.azin.atools.vo.QueryPasteBinResp;
 import jakarta.annotation.Resource;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.web.bind.annotation.*;
