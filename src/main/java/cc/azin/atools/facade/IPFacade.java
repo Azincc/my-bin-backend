@@ -6,24 +6,22 @@ import cc.azin.atools.domain.network.service.IPLocationService;
 import cc.azin.atools.domain.network.vo.IpInformationVo;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import java.net.Inet4Address;
 import java.net.Inet6Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Optional;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author azin
  */
 @RestController
-@RequestMapping("/ip")
+@RequestMapping("/v1/public/ip")
 @Slf4j
 public class IPFacade {
     @Resource

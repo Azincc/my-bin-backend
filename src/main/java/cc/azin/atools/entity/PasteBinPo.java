@@ -1,19 +1,15 @@
 package cc.azin.atools.entity;
 
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
-import java.time.LocalDateTime;
-
+@EqualsAndHashCode(callSuper = true)
 @Data
-@Builder
+@SuperBuilder
 @TableName("pastebin")
-public class PasteBinPo {
-  @TableId private String id;
+@AllArgsConstructor
+@NoArgsConstructor
+public class PasteBinPo extends BasePo {
   private String content;
-  private LocalDateTime createdAt;
-  private LocalDateTime expiresAt;
-  private Boolean markForDelete;
 }
